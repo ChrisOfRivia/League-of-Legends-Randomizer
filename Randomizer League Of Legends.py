@@ -201,6 +201,8 @@ if question.upper() == "Y":
         legendary_items = random.sample(all_legendary_items, 4)
         boots = random.choice(all_boots)
 
+legendary_items = " | ".join(legendary_items)
+
 if question.upper() == "Y":
     print(f""" \n Your build for {type_of_build} {random_champion} on {random_lane} is: 
  Mythic item:  {mythic_item}  
